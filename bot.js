@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '*'
+var prefix = "?"
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -58,7 +58,7 @@ client.user.setStatus("online")
 
 
 client.on('message', message => {
-  var prefix = "?"
+  
 var args = message.content.split(" ").slice(1);    
 if(message.content.startsWith(prefix + 'id')) {
 var year = message.author.createdAt.getFullYear()
@@ -139,7 +139,7 @@ client.on('message', message => {
      }
  });
 client.on('message', message=>{
-var prefix = "?" // البريفكس حقك هنا 
+ // البريفكس حقك هنا 
 
 
     let nour;
@@ -272,7 +272,7 @@ client.on('message', message => {
        }
    });
 client.on('message', function(msg) {
-    const prefix = '?'
+    
     if(msg.content.startsWith (prefix  + 'serv2')) {
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
@@ -432,7 +432,7 @@ const prefix = "?";
 }
 });
 client.on('message' , message => {
-    var prefix = "?";
+    ;
     let user = message.mentions.users.first()|| client.users.get(message.content.split(' ')[1])
     if(message.content.startsWith(prefix + 'unban')) {
         if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('❌|**\`ADMINISTRATOR\`لا توجد لديك رتبة`**');
@@ -449,7 +449,7 @@ client.on('message' , message => {
         message.channel.sendEmbed(embed)
     }
 });
-var prefix = "?"
+
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -557,7 +557,7 @@ client.on ("guildMemberRemove", member => {
 })
 
 client.on('message' , message => {
-  var prefix = "?";
+  ;
   if(message.author.bot) return;
   if(message.content.startsWith(prefix + "send")) {
     let args = message.content.split(" ").slice(1);
@@ -647,7 +647,7 @@ client.on("message", message => {
       }
   });
  client.on('message' , najzx => {
-          var prefix = "?";
+          ;
           if(najzx.author.bot) return;
          
           if(najzx.content.startsWith(prefix + "rolebc")) {
@@ -698,7 +698,7 @@ client.on("message", message => {
         });
 client.on('message', message => {  
 if (message.author.boss) return;
-var prefix = "?";
+;
 if (!message.content.startsWith(prefix)) return;
 let command = message.content.split(" ")[0];
 command = command.slice(prefix.length);
@@ -909,7 +909,7 @@ client.on('message', message => {/// الفا كود | Emoko#0001
     }/// الفا كود | Emoko#0001
 });
 client.on('message' , message => {
-  var prefix = "?";
+  ;
   if(message.author.bot) return;
   if(message.content.startsWith(prefix + "ping")) {
  message.channel.send('Pong...').then((msg) => {
@@ -989,7 +989,7 @@ client.on("guildMemberAdd", member => {
 }).catch(console.error)
 })
 client.on("message", message => {
-    var prefix = "?"
+    
     if (!message.content.startsWith(prefix)) return;
       let command = message.content.split(" ")[0];
       command = command.slice(prefix.length);
