@@ -1099,7 +1099,21 @@ client.on('message', msg => {
     msg.channel.send(":flag_ps:")
   }
 });
+client.on("ready", async  => {
+  setInterval(function(){
+  client.channels.find('id', '487272395300798486').setName("【");
+  client.channels.find('id', '487272395300798486').setName("【m");
+  client.channels.find('id', '487272395300798486').setName("【ma");
+  client.channels.find('id', '487272395300798486').setName("【mai");
+  client.channels.find('id', '487272395300798486').setName("【main");
+  client.channels.find('id', '487272395300798486').setName("【main-");
+  client.channels.find('id', '487272395300798486').setName("【main-c");
+  client.channels.find('id', '487272395300798486').setName("【main-ch");
+  client.channels.find('id', '487272395300798486').setName("【main-cha");
+  client.channels.find('id', '487272395300798486').setName("【main-chat】");
 
+    }, 10000);
+  });
 //code
 
 client.login(process.env.BOT_TOKEN);
