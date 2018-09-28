@@ -341,6 +341,7 @@ if (message.content.startsWith(prefix + 'help')) { //ALPHACODES
 『?report / لرفع شكوى على عضو 』
 『?servers / لرؤية عدد السيرفرات التي داخل بها البوت 』
 『?myid / لمعرفة الايدي الخاص بك 』
+『?ping / لمعرفة البنق الخاص بك 』
 
 **
    
