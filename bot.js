@@ -1064,6 +1064,7 @@ client.on('message', msg => {
 });
 
 if (command == "za5") {
+	var prefix = "?";
     let say = new Discord.RichEmbed()
         .setTitle('Text emboss :')
    message.channel.send(`\n ${zalgo(args.join(' '))}`);
