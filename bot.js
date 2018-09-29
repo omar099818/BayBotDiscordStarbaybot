@@ -1105,7 +1105,7 @@ client.on("message", message => {
 });
 
 client.on('message', ra3d => {
-var prefix = "-";
+var prefix = "?";
                         let args = ra3d.content.split(" ").slice(1).join(" ")
 if(ra3d.content.startsWith(prefix + 'ccolors')) {
     if(!args) return ra3d.channel.send('`يرجي اختيار كم لون `');
