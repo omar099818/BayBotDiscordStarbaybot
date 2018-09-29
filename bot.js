@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "?"
+const prefix = "?";
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -28,6 +28,8 @@ client.on('ready', () => {
 });
 
 //code
+
+
 
 Client.on('message', async message => { // Alpha Codes Server.
     if(message.author.bot) return;
