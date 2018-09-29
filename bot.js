@@ -1048,6 +1048,15 @@ client.on('message', msg => {
   }
 });
 
+if (command == "za5") {
+    let say = new Discord.RichEmbed()
+        .setTitle('Text emboss :')
+   message.channel.send(`\n ${zalgo(args.join(' '))}`);
+  }
+
+});
+
+
 //code
 
 client.login(process.env.BOT_TOKEN);
